@@ -1,7 +1,7 @@
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 
-const api_url = "https://api.quotable.io/random"
+const api_url = "https://api.quotable.io/random?tags=technology"
 async function getQuote(url) {
     const response = await fetch(url);
     var data = await response.json();
